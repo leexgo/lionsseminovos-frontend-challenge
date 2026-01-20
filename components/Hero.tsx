@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-md">
           Encontre o carro ideal <br className="hidden md:block" />
-          <span className="text-blue-400">sem complicações.</span>
+          <span className="text-red-400">sem complicações.</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
@@ -35,7 +35,7 @@ export default function HeroSection() {
               <Input
                 type="text"
                 placeholder="Digite marca ou modelo..."
-                className="h-12 w-full border-slate-200 bg-slate-50 focus-visible:ring-blue-500 pl-4 text-base"
+                className="h-12 w-full border-slate-200 bg-slate-50 focus-visible:ring-red-500 pl-4 text-base"
               />
             </div>
 
@@ -45,7 +45,7 @@ export default function HeroSection() {
                   className="
                     h-full w-full appearance-none rounded-md border border-slate-200 
                     bg-slate-50 px-3 py-2 text-sm text-slate-700 
-                    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                    focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent
                   "
                 >
                   <option value="">Ano (Min)</option>
@@ -68,7 +68,7 @@ export default function HeroSection() {
             </div>
             <Button
               size="lg"
-              className="w-full md:w-auto h-12 px-8 bg-blue-600 hover:bg-blue-700 text-base font-semibold shadow-md transition-all active:scale-95"
+              className="w-full md:w-auto h-12 px-8 bg-red-600 hover:bg-red-700 text-base font-semibold shadow-md transition-all active:scale-95"
             >
               <Search className="mr-2 h-5 w-5" />
               Buscar
