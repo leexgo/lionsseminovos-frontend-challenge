@@ -1,10 +1,12 @@
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-black  font-sans dark:bg-black">
+    <div className="min-h-screen flex flex-col bg-black  font-sans text-white">
       <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-8 text-white">
+      <main className="flex-1">
+        <Hero />
         <h1 className="text-4xl font-bold mb-4">Welcome to Lions</h1>
         <p className="text-lg">
           Your trusted partner in buying and selling cars. Explore our extensive

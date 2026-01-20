@@ -15,35 +15,46 @@ const bgHiglight =
 
 const Navbar = () => {
   return (
-    <>
-      <header className="sticky top-0 z-50 w-full border-b-black bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-transparent">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-xl text-slate-900">
-            <span>
-              <img src="/lions.svg" alt="logo lions" width={72} height={22} />
-            </span>
-          </div>
-          <nav className=" hidden md:flex gap-6 text-sm font-medium text-white">
-            <Link href="#" className="hover:text-red-600 transition-colors">
-              Home
-            </Link>
-            <Link href="#" className="hover:text-red-600 transition-colors">
-              Catálogo
-            </Link>
-            <Link href="#" className="hover:text-red-600 transition-colors">
-              Sobre
-            </Link>
-          </nav>
-          <Button className="hidden md:flex">Fale Conosco</Button>
+    <header
+      className="
+        sticky top-0 z-50 w-full
+        bg-black/95 backdrop-blur
+        supports-[backdrop-filter]:bg-transparent
+        h-16 md:h-20
+        [--navbar-height:4rem]
+        md:[--navbar-height:5rem]
+      "
+    >
+      <div className="container mx-auto px-4 h-full flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center gap-2 font-bold text-xl">
+          <img src="/lions.svg" alt="logo lions" width={72} height={22} />
         </div>
 
-        <span className="md:hidden absolute top-4 right-4">
+        {/* Menu Desktop */}
+        <nav className="hidden md:flex gap-6 text-sm font-medium text-white">
+          <Link href="#" className="hover:text-red-600 transition-colors">
+            Home
+          </Link>
+          <Link href="#" className="hover:text-red-600 transition-colors">
+            Catálogo
+          </Link>
+          <Link href="#" className="hover:text-red-600 transition-colors">
+            Sobre
+          </Link>
+        </nav>
+
+        <Button className="hidden md:flex">Fale Conosco</Button>
+
+        {/* Menu Mobile */}
+        <span className="md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="default" size="icon-lg">
                 <MenuIcon />
               </Button>
             </DropdownMenuTrigger>
+
             <DropdownMenuContent
               className="w-screen bg-black/10 text-white backdrop-blur-md border-none"
               align="center"
@@ -62,8 +73,8 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </span>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
