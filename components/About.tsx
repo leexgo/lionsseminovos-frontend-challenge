@@ -70,11 +70,11 @@ export default function About() {
           <p className="text-white text-lg leading-relaxed">
             Com presença internacional, a Lions conta com lojas no Brasil, nas
             cidades do{" "}
-            <span className="text-slate-400 font-medium">Rio de Janeiro</span> e{" "}
-            <span className="text-slate-400 font-medium"> São Paulo</span>, e
-            nos Estados Unidos, em{" "}
-            <span className="text-slate-400 font-medium">Orlando</span> e
-            <span className="text-slate-400 font-medium"> Miami</span>.
+            <span className="text-red-400 font-medium">Rio de Janeiro</span> e{" "}
+            <span className="text-red-400 font-medium"> São Paulo</span>, e nos
+            Estados Unidos, em{" "}
+            <span className="text-red-400 font-medium">Orlando</span> e
+            <span className="text-red-400 font-medium"> Miami</span>.
           </p>
         </div>
       </div>
