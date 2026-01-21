@@ -36,3 +36,7 @@ https://lionsseminovos-frontend-challenge.vercel.app/
 Este projeto foi uma etapa fundamental para o meu desenvolvimento técnico. Apesar de não estar 100% finalizado, o processo me trouxe aprendizados valiosos nas stacks usadas.
 
 Pretendo continuar trabalhando neste repositório para refinar a componentização, aplicar melhores práticas de código e implementar as funcionalidades restantes, focando em escalabilidade e performance.
+
+## Linkedin
+
+https://www.linkedin.com/in/goalex29/
