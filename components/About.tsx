@@ -1,10 +1,8 @@
 import { Trophy, ShieldCheck, Globe2, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   return (
-    <section className="py-24">
+    <section className="py-24" id="about">
       <div className="container mx-auto px-4">
         <div>
           <h1 className="font-semibold tracking-wide uppercase py-4">

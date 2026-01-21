@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
@@ -14,6 +15,14 @@ const bgHiglight =
   "data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 focus:bg-transparent";
 
 const Navbar = () => {
+  const handleWhatsAppClick = () => {
+    const phone = "558004540505";
+    const message = `Olá! Gostaria de tirar dúvidas.`;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  };
   return (
     <header
       className="
@@ -31,20 +40,27 @@ const Navbar = () => {
           <img src="/lions.svg" alt="logo lions" width={72} height={22} />
         </div>
 
-        {/* Menu Desktop */}
         <nav className="hidden md:flex gap-6 text-sm font-medium text-white">
-          <Link href="#" className="hover:text-red-600 transition-colors">
+          <Link href="/" className="hover:text-red-600 transition-colors">
             Home
           </Link>
-          <Link href="#" className="hover:text-red-600 transition-colors">
+          <Link
+            href="/catalog"
+            className="hover:text-red-600 transition-colors"
+          >
             Catálogo
           </Link>
-          <Link href="#" className="hover:text-red-600 transition-colors">
+          <Link href="/#about" className="hover:text-red-600 transition-colors">
             Sobre
           </Link>
         </nav>
 
-        <Button className="hidden md:flex">Fale Conosco</Button>
+        <Button
+          className="hidden md:flex cursor-pointer"
+          onClick={handleWhatsAppClick}
+        >
+          Fale Conosco
+        </Button>
 
         {/* Menu Mobile */}
         <span className="md:hidden">
@@ -61,13 +77,28 @@ const Navbar = () => {
             >
               <DropdownMenuGroup className="flex flex-col gap-2 p-4 items-center">
                 <DropdownMenuLabel className="hover:text-red-600">
-                  Home
+                  <Link
+                    href="/"
+                    className="hover:text-red-600 transition-colors"
+                  >
+                    Home
+                  </Link>
                 </DropdownMenuLabel>
                 <DropdownMenuItem className={bgHiglight}>
-                  Sobre
+                  <Link
+                    href="/catalog"
+                    className="hover:text-red-600 transition-colors"
+                  >
+                    Catálogo
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className={bgHiglight}>
-                  Catálogo
+                  <Link
+                    href="/#about"
+                    className="hover:text-red-600 transition-colors"
+                  >
+                    Sobre
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuGroup>
             </DropdownMenuContent>
