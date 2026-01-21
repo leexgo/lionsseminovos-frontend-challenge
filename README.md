@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Como rodar o projeto
+
+Primeiramente faça um clone desse repositório
 
 ```bash
+npm install //para instalar todos os pacotes e dependências
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) para ver o projeto rodando.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Lions Seminovos - Desafio Front-end
 
-## Learn More
+Este projeto é uma plataforma de listagem e visualização de veículos seminovos, desenvolvida como parte de um desafio técnico. O foco principal foi criar uma interface responsiva e performática. Usando como inspiração o site oficial da Lions.
 
-To learn more about Next.js, take a look at the following resources:
+Os pontos principais do site usados como referêcia, foram: tela inicial e a página de catálogo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tecnologias Utilizadas (Stacks)
+
+- Next.js: Pela componentização e eficiência.
+- TypeScript: Para garantir segurança com tipagem de dados.
+- Tailwind CSS: Para estilização rápida e responsiva.
+- Lucide React: Para a biblioteca de ícones.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy na Vercel
+https://lionsseminovos-frontend-challenge.vercel.app/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Considerações finais 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto foi uma etapa fundamental para o meu desenvolvimento técnico. Apesar de não estar 100% finalizado, o processo me trouxe aprendizados valiosos nas stacks usadas.
+
+Pretendo continuar trabalhando neste repositório para refinar a componentização, aplicar melhores práticas de código e implementar as funcionalidades restantes, focando em escalabilidade e performance.
